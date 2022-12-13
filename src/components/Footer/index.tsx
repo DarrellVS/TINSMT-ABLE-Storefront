@@ -8,9 +8,24 @@ export default function Footer() {
   return (
     <Box bg="#16161A" py="5rem">
       <MaxWidth>
-        <Grid templateColumns="1fr 3fr" gap="1rem" alignItems="center">
-          <Image src="/images/logo/default.png" alt="logo" maxW="10rem" />
-          <Grid templateColumns="repeat(3, 1fr)" gap="3rem">
+        <Grid
+          templateColumns={{ base: "auto", lg: "1fr 3fr" }}
+          gap="1rem"
+          alignItems="center"
+        >
+          <Image
+            src="/images/logo/default.png"
+            alt="logo"
+            maxW="10rem"
+            display={{
+              base: "none",
+              lg: "block",
+            }}
+          />
+          <Grid
+            templateColumns={{ base: "auto", lg: "repeat(3, 1fr)" }}
+            gap="3rem"
+          >
             <FooterColumn title="Support">
               <FooterItem
                 items={[

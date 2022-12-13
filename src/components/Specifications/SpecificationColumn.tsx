@@ -14,7 +14,7 @@ export default function SpecificationColumn({ title, children }: Props) {
         fontSize="26px"
         letterSpacing=".75rem"
         textTransform="uppercase"
-        mb="1rem"
+        mb=".25rem"
       >
         {title}
       </Text>

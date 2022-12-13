@@ -46,14 +46,21 @@ export default function Topnav() {
     >
       <MaxWidth>
         <Flex
-          py={isScolled ? "1rem" : "2rem"}
+          py={{
+            base: isScolled ? ".5rem" : "1rem",
+            lg: isScolled ? "1rem" : "2rem",
+          }}
           h="auto"
           justifyContent="space-between"
           alignItems="center"
           transition="all .2s ease-in-out"
         >
-          <Image src="/images/logo/black.png" alt="ABLE Logo" h="2.5rem" />
-          <Flex gap="4rem">
+          <Image
+            src="/images/logo/black.png"
+            alt="ABLE Logo"
+            h={{ base: "1.5rem", lg: "2.5rem" }}
+          />
+          <Flex gap="4rem" display={{ base: "none", md: "flex" }}>
             <NavLink href="#features" title="Features" />
             <NavLink href="#specifications" title="Specifications" />
             <NavLink href="#about-us" title="About Us" />

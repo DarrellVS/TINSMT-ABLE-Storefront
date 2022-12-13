@@ -7,7 +7,7 @@ interface Props {
 
 export default function MaxWidth({ children, ...rest }: Props & BoxProps) {
   return (
-    <Box maxWidth="1280px" m="auto" {...rest}>
+    <Box maxWidth="1280px" m="auto" px={{ base: "1rem", lg: "2rem" }} {...rest}>
       {children}
     </Box>
   );
