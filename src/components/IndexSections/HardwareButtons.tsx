@@ -39,12 +39,11 @@ export default function HardwareButtons() {
         </Heading>
 
         <Text mt="2rem">
-          Built with cutting edge technology, our interface is the perfect tool
-          to help you get the most out of your workspace.
-          <br />
-          <br />
-          With a simple and intuitive design, you can easily navigate through
-          our interface and get the most out of your (T)ABLE.
+          Use the capacitive buttons to adjust your desk height, or use the
+          gestures to apply a saved height.
+        </Text>
+        <Text mt=".5rem">
+          You can also customize your own presets and save them to the desk.
         </Text>
       </Box>
       {!isMobile && image}

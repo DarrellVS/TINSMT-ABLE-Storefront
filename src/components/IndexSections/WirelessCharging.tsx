@@ -65,12 +65,11 @@ export default function WirelessCharging() {
         </Flex>
 
         <Text mt="2rem">
-          Built with cutting edge technology, our interface is the perfect tool
-          to help you get the most out of your workspace.
-          <br />
-          <br />
-          With a simple and intuitive design, you can easily navigate through
-          our interface and get the most out of your (T)ABLE.
+          Charge your phone wirelessly while you work. No more tangled wires and
+          no more searching for a charger.
+        </Text>
+        <Text mt=".5rem">
+          <b>Compatible with Qi wireless charging</b>
         </Text>
       </Box>
     </Grid>

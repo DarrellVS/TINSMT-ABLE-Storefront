@@ -64,8 +64,8 @@ export default function EfficiencySection() {
               <Text mt="2rem">
                 Built with cutting edge technology, our interface is the perfect
                 tool to help you get the most out of your workspace.
-                <br />
-                <br />
+              </Text>
+              <Text mt=".5rem">
                 With a simple and intuitive design, you can easily navigate
                 through our interface and get the most out of your (T)ABLE.
               </Text>

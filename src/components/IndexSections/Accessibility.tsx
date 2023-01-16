@@ -53,10 +53,9 @@ export default function AccessibilitySection() {
           <Text mt="2rem">
             Raise your (T)ABLE to your desired height with the touch of a
             button.
-            <br />
-            <br />
-            All the way from 72 cm to 132 cm, making it perfect for any
-            situation.
+          </Text>
+          <Text mt=".5rem">
+            Change the height from 75cm to 135cm with the touch of a button.
           </Text>
         </Box>
       </Grid>
