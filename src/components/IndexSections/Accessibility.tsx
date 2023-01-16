@@ -5,26 +5,20 @@ import { Box, Text, Grid, Heading, Image, Button } from "@chakra-ui/react";
 export default function AccessibilitySection() {
   const [isExtended, setIsExtended] = useState(false);
   const imgRef = useRef<HTMLImageElement>(null);
-  const img = imgRef.current;
 
-  const scrollFunctionAccessibility = useCallback(
-    (e: Event) => {
-      if (!img) return;
-      const imgPos = img.getBoundingClientRect();
-      setIsExtended(
-        window.innerHeight / 2 - imgPos.height / 2 + 50 > imgPos.top
-      );
-    },
-    [img]
-  );
+  const scrollFunctionAccessibility = useCallback((e: Event) => {
+    const img = imgRef.current;
+    if (!img) return;
+    const imgPos = img.getBoundingClientRect();
+    setIsExtended(window.innerHeight / 2 - imgPos.height / 2 + 50 > imgPos.top);
+  }, []);
 
   useEffect(() => {
-    if (!window || typeof window === "undefined") return;
-    window.addEventListener("scroll", scrollFunctionAccessibility);
+    document.addEventListener("scroll", scrollFunctionAccessibility);
     return () => {
-      window.removeEventListener("scroll", scrollFunctionAccessibility);
+      document.removeEventListener("scroll", scrollFunctionAccessibility);
     };
-  });
+  }, [scrollFunctionAccessibility]);
 
   return (
     <>

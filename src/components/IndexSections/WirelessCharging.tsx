@@ -5,26 +5,22 @@ import { BsCheck2Circle } from "react-icons/bs";
 export default function WirelessCharging() {
   const [displayPhone, setDisplayPhone] = useState(false);
   const imgRef = useRef<HTMLImageElement>(null);
-  const img = imgRef.current;
 
-  const scrollFunctionPhone = useCallback(
-    (e: Event) => {
-      if (!img) return;
-      const imgPos = img.getBoundingClientRect();
-      setDisplayPhone(
-        window.innerHeight / 2 - imgPos.height / 2 + 50 > imgPos.top
-      );
-    },
-    [img]
-  );
+  const scrollFunctionPhone = useCallback((e: Event) => {
+    const img = imgRef.current;
+    if (!img) return;
+    const imgPos = img.getBoundingClientRect();
+    setDisplayPhone(
+      window.innerHeight / 2 - imgPos.height / 2 + 50 > imgPos.top
+    );
+  }, []);
 
   useEffect(() => {
-    if (!window || typeof window === "undefined") return;
-    window.addEventListener("scroll", scrollFunctionPhone);
+    document.addEventListener("scroll", scrollFunctionPhone);
     return () => {
-      window.removeEventListener("scroll", scrollFunctionPhone);
+      document.removeEventListener("scroll", scrollFunctionPhone);
     };
-  });
+  }, [scrollFunctionPhone]);
 
   return (
     <Grid
