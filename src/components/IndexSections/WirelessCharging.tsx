@@ -27,7 +27,7 @@ export default function WirelessCharging() {
       templateColumns={{ base: "auto", md: "1.5fr 1fr" }}
       gap={{ base: "2rem", md: "5rem" }}
       alignItems="center"
-      mt="10rem"
+      mt={{ base: "5rem", md: "10rem" }}
     >
       <Image
         src={
@@ -50,6 +50,7 @@ export default function WirelessCharging() {
           alignItems="center"
           gap="1rem"
           color={displayPhone ? "#3ebc3e" : ""}
+          justifyContent={{ base: "center", md: "flex-start" }}
         >
           <Heading fontSize="32px" fontWeight="400" opacity="0.8">
             Charging

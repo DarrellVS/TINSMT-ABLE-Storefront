@@ -20,7 +20,7 @@ export default function EfficiencySection() {
       <SectionTitle
         title="Supercharge Your Workspace Efficiency"
         subtitle="Features"
-        mt="10rem"
+        mt={{ base: "5rem", md: "10rem" }}
       />
 
       <Box>

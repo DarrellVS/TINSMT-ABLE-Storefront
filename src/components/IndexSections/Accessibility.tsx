@@ -25,7 +25,7 @@ export default function AccessibilitySection() {
       <SectionTitle
         title="Elevate Your Workspace"
         subtitle="Technology"
-        mt="10rem"
+        mt={{ base: "5rem", md: "10rem" }}
       />
 
       <Grid

@@ -21,7 +21,7 @@ export default function Home() {
         <SectionTitle
           title="Built To Last"
           subtitle="Specifications"
-          mt="10rem"
+          mt={{ base: "5rem", md: "10rem" }}
         />
         <Specifications />
       </MaxWidth>
