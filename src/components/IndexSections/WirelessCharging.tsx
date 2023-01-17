@@ -43,7 +43,13 @@ export default function WirelessCharging() {
         <Heading fontSize="32px" fontWeight="400" opacity="0.8">
           Built-in
         </Heading>
-        <Heading fontSize="42px" fontWeight="900" fontStyle="italic">
+        <Heading
+          fontSize="42px"
+          fontWeight="900"
+          fontStyle="italic"
+          letterSpacing={displayPhone ? ".5rem" : "0"}
+          transition="all .5s ease"
+        >
           Wireless
         </Heading>
         <Flex

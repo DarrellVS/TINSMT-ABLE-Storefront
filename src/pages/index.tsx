@@ -17,12 +17,6 @@ export default function Home() {
         <AccessibilitySection />
         <HardwareButtons />
         <WirelessCharging />
-
-        <SectionTitle
-          title="Built To Last"
-          subtitle="Specifications"
-          mt={{ base: "5rem", md: "10rem" }}
-        />
         <Specifications />
       </MaxWidth>
       <Footer />
