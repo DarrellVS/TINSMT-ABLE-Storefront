@@ -40,8 +40,8 @@ export default function HeaderSection() {
           <Text>ACCESSIBLE</Text>
           <Text>CLEAN</Text>
         </Box>
-        <Button variant="cta" mt="3rem">
-          Kickstart Us
+        <Button variant="cta" mt="3rem" fontSize="1.25rem">
+          Pre-Order Now
         </Button>
       </Box>
       <Image

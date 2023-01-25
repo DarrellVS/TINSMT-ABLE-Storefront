@@ -67,7 +67,7 @@ export default function Topnav() {
           </Flex>
 
           <Button colorScheme="able" variant="cta">
-            Kickstart Us
+            Pre-Order Now
           </Button>
         </Flex>
       </MaxWidth>
